@@ -1,0 +1,913 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+body { 
+    width: 80vw;
+    margin:0 auto;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+.container {
+    background-color: #08022D; 
+    width: 80vw;
+}
+/* Header start*/
+/* set a wrap for header */
+header {
+    max-width: 65vw;
+    margin: 0 auto;
+}
+
+#headernav {
+    display:flex;
+    justify-content: space-between;
+    padding:5vh 0;
+}
+
+.headerlogoname p {
+    font-family: 'Poppins', sans-serif;
+    color:#ffff;
+    font-size: 3.5vh;
+    letter-spacing: 0.1vw;
+    font-weight: 600;
+}
+/* Hide header menu at portrait tablet and small desktops */
+.headermenuword {
+    display:none;
+}
+
+.dropdownboxsetting {
+    display:flex;
+    justify-content: flex-end;
+}
+
+.dropdownboxsetting li {
+    list-style: none;
+}
+
+.dropdownboxsetting a {
+    color:#ffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2vh;
+    padding:0 1vw;
+    letter-spacing: 0.1vw;
+    text-decoration-line: none;
+}
+/* Highlight hover at header nav */
+.dropdownboxsetting a:hover {
+    background-color: #9E9DA6;
+}
+
+h1 {
+    color:#ffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 8vh;
+    text-align: center;
+    letter-spacing: 0.1vw;
+}
+
+header .backgroundpic {
+    margin:0 auto;
+    margin-top:15vh;
+    height:60vh;
+    width:65vw;
+    background-image: url(header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+
+header .logo {
+    position:absolute;
+    top:-4.5vh;
+    left:29vw;
+}
+/* Transform added */
+header .logo:hover {
+    transform: rotate(45deg);
+}
+/* Header end */
+/* Pilosophy start */
+/* Setting the classes of subtittle and the number of members in philosophy */
+.subtittle,
+.puser p {
+    color:#ffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 5vh;
+    letter-spacing: 0.1vw;
+}
+/* Each subtittle has a splash */
+.subtittle::before {
+    content: url(slashes.svg);
+    display:inline-block;
+    height:5vh;
+    width:6vh;
+    /* Put the slashs a bit down to be as same as design */
+    position:relative;
+    top:2.5vh;
+}
+/* All .content are set at here */
+.content {
+    font-family: 'Poppins', sans-serif;
+    color:#ffff;
+    font-size: 2vh;
+}
+/* Pilosophy content start */
+/* Set a wrap for Pilosophy */
+#philosophy {
+    display: flex;
+    justify-content: space-between;
+    max-width: 65vw;
+    margin: 0 auto;
+    padding:10vh 0;
+}
+
+.pcontent {
+    width:29vw;
+    padding-right: 5vw;
+    line-height: 3.5vh;
+}
+
+.pusernumber {
+    position: relative;
+    background-image: url(image1.jpg);
+    width:24vw;
+    height:60vh;
+    background-position: center;
+    background-size:cover;
+    position:relative;
+}
+
+.puser {
+    position:absolute;
+    background-color: #3D20EF;
+    padding:7vh 4vw;
+    left: -10vw;
+    bottom:-17vh;  
+}
+/* The differences between subtittles and .puser p */
+.puser p {
+    line-height: 4vh;
+    text-align: center;
+}
+button {
+    background-color: #3D20EF;
+    color:#ffff;
+    font-size: 2vh;
+    margin: 2vh 0;
+    padding: 1.5vh 3vw;
+    border-radius: 0%;
+    border:none;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+}
+/* Pilosophy end */
+/* Classes start */
+#classes {
+    max-width:65vw;
+    margin: 0 auto;
+    padding:10vh 0;
+}
+/* The contents at classes and contact are set */
+#classes .content,
+#contact .content {
+    width:26vw;
+    line-height: 4vh;
+}
+
+.classtypes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10vh;
+}
+/* clip pictures */
+.clargepic img {
+    width:32vw;
+    height:50vh;
+    object-fit:cover;
+}
+
+.csmallpic img {
+    width:21vw;
+    height:50vh;
+    object-fit:cover;
+}
+
+.clargepic,
+.csmallpic {
+    height:50.4vh;
+    margin-bottom: 2vh;
+    position:relative;
+    border-bottom:0.5vh solid #ffd600;
+}
+
+.clargepic p,
+.csmallpic p {
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    color:#ffff;
+    font-size: 4vh;
+    letter-spacing: 0.1vw;
+    position: absolute;
+    left:3vw;
+    bottom:-2vh;   
+}
+/* Animation added */
+.clargepic:hover {
+    transform: scale(1.1);
+    border-bottom:0.5vh solid #3D20EF;
+}
+
+.csmallpic:hover {
+    transform: scale(1.1);
+    border-bottom:0.5vh solid #3D20EF;
+}
+/* Classes end */
+/* Contact start */
+#contact {
+    background-image: url(image7.jpg);
+}
+
+.contactwrap {
+    max-width:65vw;
+    margin: 0 auto;
+    padding:3vh 0;
+}
+
+form {
+    width: 43.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+}
+
+.formcolumn {
+    display: flex;
+    flex-direction:column;
+}
+
+.formraw {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+} 
+/* Font setting for label and form button */
+label,
+input[type="submit"]  {
+    font-family: 'Poppins', sans-serif;
+    color:#ffff;
+    font-size: 2vh;
+    padding:1vh 0;
+}
+/* Different widths between name and email inputs */
+input[type="text"] {
+    width:18vw;
+}
+
+input[type="email"] {
+    width:25vw;
+}
+/* Common setting in both name and email inputs */
+input[type="text"],
+input[type="email"] {
+    height:5vh;
+    background-color: #9E9DA6;
+    border:none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+    padding:1vh 1vw;
+    margin-bottom: 2vh;
+}
+
+textarea {
+    resize:none;
+    height:25vh;
+    margin-bottom: 4vh;
+    background-color: #9E9DA6;
+    border:none;
+}
+/* Background color and width for form button */
+input[type="submit"] {
+    background-color: #3D20EF;
+    border:none;
+    width:13vw;
+}
+/* Contact end */
+/* Memberfeedback start */ 
+/* Both memberfeedback and footer's wrap are set */
+#memberfeedback,
+footer {
+    max-width:65vw;
+    margin: 0 auto;
+}
+
+.whatmembershare {
+    width:72%;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-left:0.5vh solid #ffd600;
+    padding-left: 3vw;
+    margin:0;
+}
+/* Direct child for member's words and adjacent selector for member's name */
+.whatmembershare > p,
+.memberinfo P:first-child {
+    color:#ffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3.5vh;
+    letter-spacing: 0.1vw;
+    line-height: 5vh;
+    margin-top: 0;
+}
+
+.memberprofile {
+    display:flex;
+    height:14vh;
+    width:25vw;
+    flex-wrap: wrap;
+}
+/* Last child for member's status */
+.memberinfo P:last-child {
+    color:#ffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vh;
+    padding-left: 1.5vw;
+}
+/* Narrow the space between name and status of member */
+.memberinfo P:first-child,
+.memberinfo P:last-child {
+    line-height: 1.5vh;
+}
+/* Add a padding for member's name */
+.memberinfo P:first-child {
+    padding-left:1vw;
+/* Fix the margin-top from the common setting before */
+    margin-top: 3vh;
+}
+
+.memberprofile img{
+    height:14vh;
+    width:7vw;
+    border-radius: 50%;
+}
+
+#memberfeedback .backgroundpic {
+    margin: 10vh auto;
+    background-image: url(image8.jpg);
+    height:43vh;
+    background-position: center;
+    background-size: cover;
+}
+/* Memberfeedback end */
+/* Footer start */
+.footercontent {
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 0.1vh solid #9E9DA6;
+    padding-bottom: 7vh;
+}
+/* Actually belows have the same style but I tried to applied different advanced selectors on them respecitvely */
+/* Adjacent selector aims at address */
+.footercontent img + p {
+    font-family: 'Poppins', sans-serif;
+    color:#ffff;
+    font-size: 2vh;
+    width: 10vw;
+    line-height: 3vh;
+}
+/* nth-child selector aims at email address */
+.footercontent p:nth-child(3) {
+    font-family: 'Poppins', sans-serif;
+    color:#ffff;
+    font-size: 2vh;
+}
+/* nth-of-type selector aims at img */
+.footercontent img:nth-of-type(1) {
+    height: 8vh;
+    margin-bottom: 3vh;
+}
+
+.footermenu {
+    display:flex;
+    justify-content: space-between;
+}
+/* Let the menu at the same level of the logo */
+.footermenu ul {
+    margin-top:0;
+}
+
+.footermenu li {
+    font-family: 'Poppins', sans-serif;
+    color:#ffff;
+    font-size: 2vh;
+    list-style: none;
+    text-decoration: none;
+    padding-bottom: 3vh;
+}
+
+.footermenu a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color:#ffff;
+    font-size: 2vh;
+}
+/* Fix the differences between menu tittles and menu sections */
+.footermenu li:first-child {
+    font-weight: 600;
+    padding-bottom: 5vh;
+}
+
+.footerrowmenu li:first-child {
+    font-weight: 400;
+}
+
+footer > p {
+    font-family: 'Poppins', sans-serif;
+    color:#9E9DA6;
+    font-size: 1.5vh;
+    padding-bottom: 15vh;
+}
+/* Highlight hover on footer nav */
+.footerrowmenu a:hover {
+    background-color: #9E9DA6;
+}
+/* Transform added */
+.footercontact img:hover {
+    transform: rotate(45deg);
+}
+/* Footer end */
+
+/* Setting for Portrait tablet and small desktops start */
+@media (max-width: 1103px) {
+    /* Adjust the page wrap */
+    body { 
+        width: 100vw;
+    }
+
+    .container {
+        width: 100vw;
+    }
+    header,
+    #philosophy,
+    #classes,
+    .contactwrap,
+    #memberfeedback,
+    footer {
+        max-width: 75vw;
+    }
+    /* Philosophy start */ /* Adjust the Philosophy title space */
+    .pcontent {
+            width:35vw;
+    }
+    /* Philosophy end */
+    /* Classes start */ /* Adjust the width at classes and contact contents*/
+    #classes .content,
+    #contact .content {
+        width: 50vw;
+    }
+    /* clip pictures */
+    .clargepic img {
+        width:37vw;
+    }
+    
+    .csmallpic img {
+        width:24vw;
+    }
+    /* Classes end */
+    /* Contact start */
+    form {
+        width: 75vw;
+    }
+    /* Adjust the width of name and email inputs */
+    input[type="text"] {
+        width:33vw;
+    }
+
+    input[type="email"] {
+        width:41vw;
+    }
+    /* Submit button, changing position and width */
+    input[type="submit"] {
+        align-self: center;
+    }
+    /* Contact end */
+    /* Memberfeedback start */
+    .whatmembershare {
+        width:100%;
+    }
+
+    .memberprofile {
+        flex-wrap: nowrap;
+        width:50vw;
+        line-height: 3vh;
+    }
+    
+    .memberinfo P:first-child,
+    .memberinfo P:last-child {
+        line-height: 2.5vh;
+    }
+    /* Adjust member profile shape */
+    .memberprofile img{
+        width:10vw;
+    }
+    /* Memberfeedback end */
+    /* Footer start */
+    .footercontent img + p {
+        width:30vw;
+    }
+    /* Footer end */
+}
+/* Setting for Portrait tablet and small desktops end */
+
+/* Setting for Landscape phone to portrait tablet start */
+@media (max-width: 1024px) {
+    /* Eliminate the page wrap */
+    body { 
+        width: 100vw;
+    }
+
+    .container {
+        width: 100vw;
+    }
+    /* set a wrap for sections */
+    header,
+    #philosophy,
+    #classes,
+    .contactwrap,
+    #memberfeedback,
+    footer {
+        max-width: 90vw;
+    }
+    /* Header start*/ /* Dropdownbox start */ /* Change nav to be a dropdown box */
+    .headermenu {
+        position: relative;
+    }
+    .headermenu div {
+        display: inline-block;
+        height:20vh;
+        width:13vw;
+    }
+
+    .headermenu p {
+        font-family: 'Poppins', sans-serif;
+        color:#ffff;
+        border-top: 0.5vh solid #ffff;
+        border-bottom: 0.5vh solid #ffff;
+        font-size: 3.5vh;
+        letter-spacing: 0.1vw;
+        line-height: 8vh;
+        text-align: center;
+    }
+    /* Animation start */
+    .dropdownbox {
+        /* display: none; */
+        position: absolute;
+        background-color:#08022D;
+        width:20vw;
+        left:-7vw;
+        top:0;
+        opacity: 0;
+        transition-property:opacity;
+        transition-timing-function: ease-out; 
+        transition-duration: 0.5s;
+        transition-delay: 0.2s;
+    }
+
+    .dropdownboxsetting {
+        display: block;
+    }
+
+    .dropdownbox a {
+        line-height:5vh;
+        /* border-bottom:0.2vh solid #ffff;
+        border-left:0.2vh ridge #ffff; */
+    }
+
+    .headermenuword {
+        display:block;
+        opacity: 1;
+        transition-property:opacity;
+        transition-timing-function: ease-out; 
+        transition-duration: 0.5s;
+        transition-delay: 0.2s;
+    }
+
+    .dropdownbox a:hover {
+        background-color: #9E9DA6;
+    }
+    /* Menu disapears when dropdownbox shows */
+    .headermenu:hover .headermenuword {
+        /* display: none; */
+        opacity: 0;
+    }
+
+    .headermenu:hover .dropdownbox {
+        display: block;
+        opacity: 1;
+    }
+    /* Animation end */
+    /* Fix left and right at same level at header */
+    .headerlogoname {
+        margin-top: 2.2vh;
+    }
+    /* Dropdownbox end */
+    /* Adjust the page main tittle */
+    h1 {
+        margin-top:0;
+    }
+    /* Adjust the pic under main tittle */
+    header .backgroundpic {
+        width:90vw;
+    }
+
+    header .logo {
+        left:41vw;
+    }
+    /* Header end */
+    /* Philosophy start  */ /* Change flex direction */
+    #philosophy {
+        flex-direction: column;
+        align-items: center;
+        padding:10vh 0;
+    }
+    /* Adjust content's width and add a flex attribute and move button to centre */
+    .pcontent {
+        width:90vw;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        align-self: center;
+    }
+    /* Adjust the background picture 1,5000+ members*/
+    .pusernumber {
+        margin-top:5vh;
+        align-self: flex-end;
+        width:50vw;
+        height:60vh;
+    }
+
+    .puser {
+        padding:3vh 8vw;
+        left: -40vw;
+        bottom:-33vh; 
+        margin-bottom: 15vh;
+    }
+        
+    .puser p {
+        font-weight: 600;
+        font-size: 8vh;
+    }
+    /* Philosophy end */
+    /* Classes start */
+    #classes .content,
+    #contact .content {
+        width: 90vw;
+    }
+    /* clip pictures */
+    .clargepic img {
+        width:43vw;
+    }
+
+    .csmallpic img {
+        width:28vw;
+    }
+    /* Classes end */
+    /* Contact start */
+    form {
+        width: 90vw;
+    }
+    /* Adjust the width of name and email inputs */
+    input[type="text"] {
+        width:40vw;
+    }
+
+    input[type="email"] {
+        width:48vw;
+    }
+    /* Submit button, changing position and width */
+    input[type="submit"] {
+        width:33vw;
+        align-self: center;
+    }
+    /* Contact end */
+    /* Memberfeedback start */
+    .whatmembershare {
+        width:100%;
+    }
+    /* Adjust what member feedback part */
+    .memberprofile {
+        flex-wrap: nowrap;
+        width:50vw;
+        line-height: 3vh;
+    }
+    
+    .memberinfo P:first-child,
+    .memberinfo P:last-child {
+        line-height: 2.5vh;
+    }
+    /* Adjust member profile shape */
+    .memberprofile img{
+        width:18vw;
+    }
+    /* Memberfeedback end */
+    /* Footer start */
+    .footercontent {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom: 0.1vh solid #9E9DA6;
+        padding-bottom: 7vh;
+    }
+    .footercontent img + p {
+        width:50vw;
+    }
+
+    .footercontact {
+        width:100%;
+        border-bottom: 0.1vh solid #9E9DA6;
+        padding-bottom:5vh;
+    }
+
+    .footermenu {
+        flex-direction: column;
+    }
+
+    .footerrowmenu {
+        display:flex;
+    }
+    .footermenu li {
+        margin-right:8vw;
+    }
+
+    .footermenu li:first-child {
+        padding-bottom: 2vh;
+    }
+
+    footer > p {
+        text-align: center;
+    }
+    /* Footer end */
+} 
+/* Setting for Landscape phone to portrait tablet end */  
+
+/* Setting for Landscape phones and down start */
+@media (max-width: 655px) {
+    /* Header start */
+    h1 {
+        font-size: 6vh;
+        line-height: 10vh;
+    }
+
+    .headermenu div {
+        width:18vw;
+    }
+
+    .dropdownbox {
+        width:30vw;
+        left:-10vw;
+        top:0;
+    }
+    /* Adjust the logo position */
+    header .logo {
+        left:40vw;
+        top:-3vh;
+    }
+     /* Adjust the pic under main tittle */
+    header .backgroundpic {
+        margin-top:10vh;
+        height:40vh;
+        width:90vw;
+    }
+    /* Header end */
+    /* Classes start */
+    .content {
+        font-size: 2.5vh;
+    }
+    
+    button {
+        width:100%;
+        padding:2.5vh 0;
+    }
+    /* Adjust the background picture 1,5000+ members*/
+    .pusernumber {
+        width:60vw;
+        height:42vh;
+    }
+    
+    .puser {
+        padding:0 7vw;
+        left: -25vw;
+        bottom:-28vh;  
+    }
+            
+    .puser p {
+        font-size: 5vh;
+    }
+    /* Philosophy end */
+    /* Classes start */
+    .classtypes {
+        flex-direction: column;
+        margin-bottom: 3vh;
+    }
+    /* clip pictures */
+    .clargepic img,
+    .csmallpic img {
+        width:100%;
+    }
+    /* Classes end */
+     /* Contact start */
+    /* Adjust the width of name and email inputs */
+    .formraw {
+        flex-direction: column;
+    } 
+    input[type="text"] {
+        width:100%;
+    }
+
+    input[type="email"] {
+        width:100%;
+    }
+    /* Submit button, changing position and width */
+    input[type="submit"] {
+        width:100%;
+    }
+    /* Contact end */
+    /* Memberfeedback start */
+    .whatmembershare p {
+        font-size:3.2vh;
+        font-weight: 400;
+    }
+    /* Adjust what member feedback part */
+    .memberprofile {
+        flex-wrap: nowrap;
+        width:80vw;
+        line-height: 3vh;
+    }
+    /* Adjust member profile shape */
+    .memberprofile img{
+        width:19vw;
+    }
+    /* Adjust the arrow's location */
+    .whatmembershare {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .whatmembershare > img {
+        align-self: flex-end;
+    } 
+    /* Adjust background pic */
+    #memberfeedback .backgroundpic {
+        height:30vh;
+    }
+    /* Memberfeedback end */
+    /* Footer start */
+    .footercontent img + p {
+        width:40vw;
+    }
+    /* Footer end */
+}
+/* Setting for Landscape phones and down end */
+
+/* Settomg for the smallest device start*/
+@media (max-width: 440px){
+    /* Adjust the dropdown box position */
+    .dropdownbox {
+        width:30vw;
+        left:-15vw;
+        top:0;
+    }
+    .dropdownbox a {
+        font-size:1.5vh;
+    }
+    /* Adjust memberprofile img shape */
+    .memberprofile img{
+        width:25vw;
+    }
+    /* Adjust subtittle size */
+    .subtittle,
+    .puser p {
+    font-size: 4vh;
+    }
+}
+/* Settomg for the smallest device start* end/
