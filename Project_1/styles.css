@@ -1,0 +1,716 @@
+/* setup snippet start */
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+/* setup snippet end */
+
+/* stripping base styles */
+
+body {
+
+    width: 88vw;
+
+    margin: 0 auto;
+
+
+}
+
+/* base body styles */
+
+html{
+
+	font-size: 62.5%;
+}
+
+
+/* First block header start */
+/* use position:absolute to situate the header's contents */
+/* header is the relative content */
+header{
+
+  height: 100vh;
+
+  background-image: url(hero.jpg);
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  position:relative;
+
+        
+}
+
+/* In the cases of h1, #headerlogo and header ul, "align-self" may be another solution (will test this method in another version */
+/* Children's locations setting */
+h1{
+
+  position: absolute;
+
+  top: 49vh;
+
+  right: 73vh;
+
+  font-family: 'Vidaloka', serif;
+
+  font-weight: 400;
+
+  font-size: 80px;
+
+  color: #ebeff1;
+
+  text-transform: capitalize;
+
+  letter-spacing: 2px;
+
+  text-align: center;
+
+}
+
+#headerlogo{
+
+  position: absolute;
+
+  top: 6vh;
+
+  right: 76vw;
+
+  width: 4vw;
+
+}
+
+header ul{
+
+  position: absolute;
+
+  top: 6vh;
+
+  right: 6vw;
+
+  display:flex;
+
+  list-style: none;
+
+}
+
+/* Inside a there are some default setting so have to set the value in here not its parent */
+header a{
+
+  font-family: 'Vidaloka', serif;
+
+  font-weight: 400;
+  
+  font-size: 30px;
+  
+  color: #ebeff1;
+  
+  text-transform: capitalize;
+
+  padding: 0 30px;
+
+  text-decoration-line: none;
+
+  letter-spacing: 1px;
+
+}
+  
+/* First block header end */
+
+/* Second block start */
+/* Flexbox is used in this section */
+#about {
+
+  height: 90vh;
+
+  width: 50vw;
+
+  color: #EBEFF1;
+
+  padding: 10vh 6vw;
+
+  display: flex;
+
+  flex-direction: column;
+
+  flex-wrap: wrap;
+
+}
+
+/* flex children setting */
+#blogpic{
+
+  margin-right: 8vw;
+
+  height: 70vh;
+
+  width: 28vw;
+
+}
+
+h2 {
+
+  font-family: 'Vidaloka', serif;
+
+  font-weight: 400;
+
+  font-size: 70px;
+
+  color: #0c1d24;
+
+  text-transform: capitalize;
+  
+  margin-bottom: 1vh;
+}
+
+#blogcontent {
+
+  font-family: 'Roboto', sans-serif;
+
+  width: 28vw;
+
+  font-size: 25px;
+
+  line-height: 35px;
+
+  color: #0c1d24;
+
+}
+
+/* Drop down menu start*/
+/* Setting the whole part as the relative */
+#dropdown {
+
+  margin-top: 4vh;
+
+  position: relative;
+
+  display: inline-block;
+
+}
+
+/* Eliminate the underline of hyperlink */
+#sayhello {
+
+  text-decoration-line: none;
+
+}
+
+#sayhello button{
+
+  font-family: 'Vidaloka', serif;
+
+  font-size: 25px;
+
+  text-transform: uppercase;
+
+  background-color: #D45121;
+
+  width: 15vw;
+
+  height: 8vh;
+
+  color: #EBEFF1;
+
+  text-align: center;
+
+  padding-top: 1vh;
+
+}
+
+#dropdowncontent a {
+
+  text-decoration-line: none;
+
+  color: #EBEFF1;
+
+  display: block;
+
+}
+
+/* Hiding dropdown box and setting its default color*/
+#dropdowncontent {
+
+  position:absolute;
+
+  display:none;
+
+  background-color: #8D9BA0;
+
+}
+
+/* Setting the dropdown box color when mouse hovering it */
+#dropdowncontent a:hover {background-color: #D45121;}
+
+/* Setting the dropdown box */
+#dropdown:hover #dropdowncontent {
+
+  display: block;
+
+}
+
+/* Setting the color for button when box is working */
+#dropdown:hover #sayhello button {background-color: #0C1D24;}
+
+.menupic {
+
+  height: 8vh;
+
+  width: 6vw;
+
+  padding: 4vh 2vw 0 2vw;
+
+}
+
+#dropdowncontent a {
+
+  width: 20vw;
+
+  font-family: 'Vidaloka', serif;
+
+  color: #EBEFF1;
+
+  font-size: 28px;
+
+  padding: 2vh 0;
+
+  text-transform: capitalize;
+
+  border:3px ridge #0C1D24;
+
+}
+
+/* Drop down menu end */
+/* Second block end */
+
+/* Thrid block start */
+/* flexbox is used in this section */
+#blog {
+
+  height: 170vh;
+
+  margin-bottom: 0vh;
+
+}
+
+#blogheader {
+
+  height: 60vh;
+
+  width: 88vw;
+
+  background-image: url(image2.jpg);
+
+  background-size:cover;
+
+  background-repeat: no-repeat;
+
+  background-position: center;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+}
+
+h4 {
+
+  font-family: 'Vidaloka', serif;
+
+  letter-spacing: 6px;
+
+  font-size: 90px;
+
+  color: #EBEFF1;
+
+  margin-top: 20vh;
+  margin-bottom: 0.5vh;
+
+}
+
+h5 {
+
+  font-family: 'Roboto', sans-serif;
+
+  letter-spacing: 2px;
+
+  font-size: 26px;
+
+  color: #EBEFF1;
+
+  text-transform: uppercase;
+
+  font-weight: 200;
+
+}
+
+#blogpicheader {
+
+  height: 25vh;
+
+  display: flex;
+
+  justify-content: center;
+
+}
+
+#blogpicheader p {
+
+  font-family: 'Vidaloka', serif;
+
+  font-size: 70px;
+
+  text-transform: capitalize;
+
+  color: #0C1D24;
+
+}
+
+#blogcontent {
+
+  width:auto;
+
+  display:flex;
+
+  justify-content: center;
+
+  margin-bottom: 0;
+
+}
+
+/* Pics are set as backgroundpic for clip them properly */
+#goldenstate {
+
+  height: 65vh;
+
+  width: 25vw;
+
+  background-image: url(image3.jpg);
+
+  background-size: cover;
+
+  background-position: bottom;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-end;
+
+  margin-bottom: 0;
+
+}
+
+#elevencities {
+
+  height: 65vh;
+
+  width: 25vw;
+
+  margin: 0 2vw;
+
+  background-image: url(image4.jpg);
+
+  background-size: cover;
+
+  background-position: bottom;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-end;
+
+  margin-bottom: 0;
+
+}
+
+#yearinawe {
+
+  height: 65vh;
+
+  width: 25vw;
+
+  background-image: url(image5.jpg);
+
+  background-size: cover;
+
+  background-position: bottom;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-end;
+
+  margin-bottom: 0;
+
+}
+
+.picnames {
+
+  font-family: 'Vidaloka', serif;
+
+  font-size: 40px;
+
+  text-transform: capitalize;
+
+  background-color: #EBEFF1;
+
+  padding-left: 2vw;
+
+  padding-top: 4vh;
+
+  padding-bottom: 1vh;
+
+  margin-bottom: 0;
+
+}
+
+.picnames a {
+
+  text-decoration-line: none;
+
+  color: #0C1D24;
+
+}
+
+.date {
+
+  font-family: 'Roboto', sans-serif;
+
+  font-size: 20px;
+
+  text-transform: uppercase;
+
+  color: #8D9BA0;
+
+  background-color: #EBEFF1;
+
+  padding-bottom: 3vh;
+
+  padding-left: 2vw;
+
+  margin-top:0;
+
+  margin-bottom: 0;
+
+}
+
+/* Thrid block end */
+
+/* Fourth block start */
+/* Flexbox is used in this section */
+footer {
+
+  height: 30vh;
+
+  background-color: #0c1d24;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-evenly;
+
+  align-items: center;
+
+}
+
+footer img {
+
+  width: 4vw;
+
+  padding: 4vh 0;
+
+}
+
+#footerlink {
+
+  display: inline-block;
+
+  padding: 0 2vw;
+
+  list-style: none;
+
+}
+
+footer a{
+
+  font-family: 'Roboto', sans-serif;
+
+  font-weight: 200;
+  
+  font-size: 20px;
+  
+  color: #8D9BA0;
+  
+  text-transform: capitalize;
+
+  padding: 0 30px;
+
+  text-decoration-line: none;
+
+  letter-spacing: 1px;
+
+}
+
+/* The width must be set, it is for the linethrough */
+#linethrough {
+
+  width: 70vw;
+  
+  padding-top: 1vh;
+
+  border-bottom-width: thin;
+
+  border-bottom-color:  #8D9BA0;
+
+  border-bottom-style: solid;
+
+}
+
+#juno {
+
+  font-family: 'Roboto', sans-serif;
+
+  font-weight: 100;
+  
+  font-size: 15px;
+  
+  color: #8D9BA0;
+  
+  text-transform: capitalize;
+
+  letter-spacing: 1px;
+}
+
+#juno a {
+
+  font-size: 15px;
+
+}
+/* Fourth block end */
+
+/* LV2 new section start */
+#gallery {
+
+margin-bottom: 15vh;
+
+}
+
+#galleryheader {
+
+  display:flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+#galleryheader p {
+
+  font-family: 'Vidaloka', serif;
+
+  font-size: 70px;
+
+  text-transform: capitalize;
+
+  color: #0C1D24;
+
+}
+
+#gallerypics {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  width: 88vw;
+
+}
+
+#gallerypic1,
+#gallerypic2,
+#gallerypic3 {
+
+  height: 50vh;
+
+  width: 25vw;
+
+  margin: 1vh;
+
+}
+
+#gallerypic4,
+#gallerypic5 {
+
+  height: 48vh;
+
+  width: 38vw;
+
+  margin: 1vh;
+
+}
+
+#gallerypic1 {
+
+  background-image: url(image6.jpg);
+
+  background-position: center;
+
+  background-size:cover;
+
+}
+
+#gallerypic2 {
+
+  background-image: url(image7.jpg);
+
+  background-position: center;
+
+  background-size:cover;
+  
+}
+
+#gallerypic3 {
+
+  background-image: url(image8.jpg);
+
+  background-position: center;
+
+  background-size:cover;
+  
+}
+
+#gallerypic4 {
+
+  background-image: url(image9.jpg);
+
+  background-position: center;
+
+  background-size:cover;
+  
+}
+
+#gallerypic5 {
+
+  background-image: url(image10.jpg);
+
+  background-position: center;
+
+  background-size:cover;
+  
+}
+
+/* LV2 new section end */
