@@ -1,5 +1,5 @@
 # CSS-HTML_Project
-These two projects are built during my web dev course in Juno college.
+These two projects are built during my web dev course in Juno college./n
 About the projects:
 ###Front End Beginner Alert### :P
 Web development course is my first front-end course and it definitely attracts me and leads me go into the industry.
