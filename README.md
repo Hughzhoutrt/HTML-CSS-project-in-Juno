@@ -1,8 +1,8 @@
 # CSS-HTML_Project  
 
-These two projects are built during my web dev course in Juno college.  
-(Project 1 completed on July 02, 2021)
-(Project 1 completed on July 19, 2021)
+These two projects are built during my web dev course in Juno college.    
+(Project 1 completed on July 02, 2021)  
+(Project 1 completed on July 19, 2021)  
 About the projects:  
 
 ###Front End Beginner Alert### :P  
