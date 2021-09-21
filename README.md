@@ -5,7 +5,7 @@ These two projects are built during my web dev course in Juno college.
 (Project 1 completed on July 19, 2021)  
 About the projects:  
 
-**Front End Beginner Alert  :P  
+## Front End Beginner Alert  :P  
 
 The first project was built before I learnt flex box so I tried to use relative/absulote position. But it may have some issue in cross-browser compatibility. Then, I was trying to resize the pic but in a unsuitable method (set it as background pic without something for screen reader, it decreased the accessibility.)  
 
