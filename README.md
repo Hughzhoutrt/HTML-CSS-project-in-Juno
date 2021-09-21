@@ -28,4 +28,4 @@ Project 2:
 4. don't forget to update the title to be more descriptive as this title can be used for SEO.  
 
 ### Summary  
-I re-organized this respository after I completed my JavaScript course and wait for my web dev boot camp. Stand back and review these past months, I can feel my improvement, which is accumulated by searching new concepts and knowledge, doing exercises, making mistakes, studying feedbacks... It is good! This is how I improve myself. So appreciate to those who support me in my front end development study, my good friends, my instructors, my mentors.   
+I re-organized this respository after I completed my JavaScript course and wait for my web dev boot camp. Stand back and review these past months, especially reviewing this respository, I can feel my improvement, which is accumulated by searching new concepts and knowledge, doing exercises, making mistakes, studying feedbacks... It is good! This is how I improve myself. So appreciate to those who support me in my front end development study, my good friends, my instructors, my mentors.   
