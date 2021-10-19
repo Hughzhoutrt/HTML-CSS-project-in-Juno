@@ -4,7 +4,7 @@ These two projects are built during my web dev course in Juno college.
 (Project 1 completed on July 02, 2021)  
 (Project 1 completed on July 19, 2021)    
 
-## About the projects (front fnd beginner alert :P)   
+## About the projects (front end beginner alert :P)   
 
 This two projects were built when I just started my web development, especially the project 1. They are my course projects, which means how I built them is following the design templates and requirements.   
     
